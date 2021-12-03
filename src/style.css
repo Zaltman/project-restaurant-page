@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Stencilia-A';
+  src: url(./Stencilia-A.ttf);
+}
+
+* {
+  font-family: 'Stencilia-A';
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  /* background-color: black; */
+}
+
+.hero-image {
+  background-image: url('pic1.jpg'), url('pic2.jpg'), url('pic3.jpg');
+  background-repeat: repeat;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  height: 1000px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.705);
+  padding: 35px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  padding-bottom: 45px;
+  font-size: 60px;
+}
+
+h3 {
+  word-spacing: 5px;
+}
+
+.pizzaImg {
+  padding-bottom: 12px;
+}
