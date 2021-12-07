@@ -12,13 +12,17 @@
   /* background-color: black; */
 }
 
-.hero-image {
+body {
+  background-color: rgb(26, 26, 26);
   background-image: url('pic1.jpg'), url('pic2.jpg'), url('pic3.jpg');
-  background-repeat: repeat;
-  background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-position: top, bottom; */
+  /* background-repeat: repeat; */
+  /* background-position: center; */
+  /* background-repeat: repeat; */
+  /* background-size: cover; */
+}
+
+.hero-image {
   height: 1000px;
 
   padding: 0px;
@@ -29,7 +33,8 @@
 .hero-text {
   padding: 35px;
   text-align: center;
-  position: absolute;
+  max-width: 1000px;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,7 +48,7 @@ h1 {
   font-size: 60px;
 }
 
-h3 {
+h4 {
   word-spacing: 5px;
   line-height: 1.5;
 }
@@ -55,4 +60,62 @@ h3 {
 .pContainer {
   background-color: rgba(0, 0, 0, 0.705);
   padding: 25px;
+}
+
+.hoursList li {
+  font-size: large;
+  padding: 5px;
+}
+
+.hoursList {
+  font-size: medium;
+  padding: 15px;
+  margin-top: 25px;
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.restLocation {
+  /* padding-top: 15px; */
+  text-align: end;
+}
+
+.navContainer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  height: 60px;
+}
+
+.navButton {
+  padding: 15px;
+  width: 85px;
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 5px;
+  border: solid 2px grey;
+  border-bottom: 0px;
+  margin: 5px;
+  color: white;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.705);
+  max-width: 500px;
+}
+.pizza {
+  text-align: center;
+}
+
+.menuPizzaImg {
+  border: 2px solid rgba(255, 255, 255, 0.603);
+  border-radius: 5px;
+  align-self: center;
+  margin: 10px;
+  max-height: 400px;
+  max-width: 400px;
 }
