@@ -1,3 +1,5 @@
+import pic4 from '../src/pic4.jpg';
+
 function mainPage() {
   const website = {
     restDescription:
@@ -42,7 +44,7 @@ function mainPage() {
 
   (function () {
     let imgElement = document.createElement('img');
-    imgElement.src = '../src/pic4.jpg';
+    imgElement.src = pic4;
     imgElement.classList.add('pizzaImg');
     document.querySelector('.pContainer').appendChild(imgElement);
   })();

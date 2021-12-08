@@ -15,11 +15,8 @@
 body {
   background-color: rgb(26, 26, 26);
   background-image: url('pic1.jpg'), url('pic2.jpg'), url('pic3.jpg');
-  /* background-position: top, bottom; */
-  /* background-repeat: repeat; */
-  /* background-position: center; */
-  /* background-repeat: repeat; */
-  /* background-size: cover; */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .hero-image {
@@ -106,6 +103,7 @@ h4 {
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.705);
   max-width: 500px;
+  text-align: center;
 }
 .pizza {
   text-align: center;
@@ -113,9 +111,21 @@ h4 {
 
 .menuPizzaImg {
   border: 2px solid rgba(255, 255, 255, 0.603);
+
   border-radius: 5px;
+  /* padding-top: 55px; */
   align-self: center;
   margin: 10px;
+  margin-top: 45px;
+  /* padding-bottom: 45px; */
   max-height: 400px;
   max-width: 400px;
+}
+
+.contactUs {
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.705);
+  text-align: center;
+  max-width: 300px;
 }

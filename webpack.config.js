@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    mode: 'development',
+    // mode: 'development',
     rules: [
       {
         test: /\.css$/i,

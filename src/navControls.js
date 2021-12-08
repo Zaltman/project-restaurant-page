@@ -1,3 +1,7 @@
+import { contactPage } from './contactpage';
+import { mainPage } from './mainpage';
+import { menuPage } from './menupage';
+
 function navControls() {
   function component(divNameString, classNameString, textString) {
     const element = document.createElement(divNameString);
@@ -20,14 +24,18 @@ function navControls() {
 
   document
     .querySelector('.navContainer')
-    .appendChild(component('button', 'navButton', 'Main'));
+    .appendChild(component('button', 'navButton', 'Home'))
+    .addEventListener('click', mainPage);
 
   document
     .querySelector('.navContainer')
-    .appendChild(component('button', 'navButton', 'Menu'));
+    .appendChild(component('button', 'navButton', 'Menu'))
+    .addEventListener('click', menuPage);
+
   document
     .querySelector('.navContainer')
-    .appendChild(component('button', 'navButton', 'Contact'));
+    .appendChild(component('button', 'navButton', 'Contact'))
+    .addEventListener('click', contactPage);
 }
 
 export { navControls };
