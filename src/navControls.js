@@ -25,17 +25,34 @@ function navControls() {
   document
     .querySelector('.navContainer')
     .appendChild(component('button', 'navButton', 'Home'))
-    .addEventListener('click', mainPage);
+    .addEventListener('click', () => {
+      clearContentDom();
+      mainPage();
+    });
 
   document
     .querySelector('.navContainer')
     .appendChild(component('button', 'navButton', 'Menu'))
-    .addEventListener('click', menuPage);
+    .addEventListener('click', () => {
+      clearContentDom();
+      menuPage();
+    });
 
   document
     .querySelector('.navContainer')
     .appendChild(component('button', 'navButton', 'Contact'))
-    .addEventListener('click', contactPage);
+    .addEventListener('click', () => {
+      clearContentDom();
+      contactPage();
+    });
 }
 
+function clearContentDom() {
+  let content = document.querySelector('#content');
+  while (content.firstChild) {
+    content.removeChild(content.firstChild);
+  }
+}
+
+export { clearContentDom };
 export { navControls };
